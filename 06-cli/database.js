@@ -59,7 +59,7 @@ class Database {
             return await this.escreverArquivo([]);
         }
 
-        const dados = await this.obterDadosArquivo();
+        const dados = await this.obterDadosArquivo();1
         const indice = dados.findIndex(item => item.id === parseInt(id));
         if (indice === -1) {
             throw Error("O usuário informado não existe.");
